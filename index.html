@@ -5,37 +5,124 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sanjay Portfolio</title>
   <link rel="stylesheet" href="style.css">
+
+  <!-- Icons (Font Awesome) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 
 <body>
 
+<!-- NAVBAR -->
 <header class="navbar">
-  <h2>PORTFOLIO</h2>
-  <nav>
+  <h2 class="logo">Sanjay</h2>
+
+  <nav id="nav-links">
     <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
   </nav>
+
+  <!-- Hamburger -->
+  <div class="menu-toggle" id="menu-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
 </header>
 
+<!-- HERO -->
 <section id="home" class="hero">
-  <h1>Chagantipati Sanjay</h1>
-  <p>Aspiring Java Full Stack Developer</p>
-  <p class="subtext">Building scalable web applications using Spring Boot and modern web technologies.</p>
+
+  <p class="intro">Hi, my name is</p>
+
+  <h1 class="name">Chagantipati Sanjay</h1>
+
+  <h2 class="role">I build scalable web applications.</h2>
+
+  <p class="highlight">
+    Open to work • Java Full Stack Developer
+  </p>
+
+  <p class="desc">
+    Computer Science graduate specializing in backend and full-stack development.
+    I focus on building secure, scalable applications using Spring Boot and modern web technologies.
+  </p>
 
   <div class="buttons">
     <a href="#projects" class="btn">View Projects</a>
     <a href="https://github.com/Sanjaychagantipati" class="btn-outline">GitHub</a>
     <a href="https://www.linkedin.com/in/chagantipati-sanjay-900566229" class="btn-outline">LinkedIn</a>
   </div>
+
 </section>
 
-<section id="projects">
+<!-- ABOUT -->
+<section id="about" class="fade about-section">
+
+  <div class="about-container">
+
+    <!-- LEFT TEXT -->
+    <div class="about-text">
+      <h2>About Me</h2>
+
+      <p>
+        Hello! My name is Sanjay and I enjoy building applications that solve real-world problems.
+      </p>
+
+      <p>
+        I recently completed my B.Tech in Computer Science and Engineering. 
+        My main focus is backend development using Spring Boot along with building responsive web applications.
+      </p>
+
+      <p>
+        I am currently looking for opportunities as a Java Full Stack Developer where I can contribute, learn, and grow.
+      </p>
+    </div>
+
+    <!-- RIGHT IMAGE -->
+    <div class="about-image">
+      <img src="myphoto.png" alt="profile">
+    </div>
+
+  </div>
+
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="fade">
+  <h2>Skills</h2>
+
+  <p>
+    I'm familiar with Java, Spring Boot, REST APIs, HTML5, CSS3, JavaScript,
+    PostgreSQL, Git, Docker, and building responsive web applications.
+  </p>
+
+  <div class="skills-container">
+    <div class="skill">💻 HTML</div>
+    <div class="skill">🎨 CSS</div>
+    <div class="skill">⚡ JavaScript</div>
+    <div class="skill">☕ Java</div>
+    <div class="skill">🚀 Spring Boot</div>
+    <div class="skill">🗄 PostgreSQL</div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="fade">
   <h2>Projects</h2>
 
   <div class="project-container">
 
+    <!-- PROJECT 1 -->
     <div class="project-card">
+
+      <a href="https://github.com/Sanjaychagantipati/sms-project.git" target="_blank" class="github-icon">
+        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png">
+      </a>
+
       <h3>Student Management System</h3>
 
       <p class="tech">Spring Boot • React • PostgreSQL • JWT • Docker • Swagger</p>
@@ -43,22 +130,62 @@
       <p>
         Developed a full-stack Student Management System using Spring Boot and React with secure JWT authentication.
         Designed REST APIs and implemented modules for student, course, and attendance management.
-        Integrated Swagger for API documentation and Docker for containerization.
       </p>
 
       <div class="project-buttons">
         <a href="https://github.com/Sanjaychagantipati/sms-project.git" class="btn">View Code</a>
-        <a href="https://github.com/Sanjaychagantipati" class="btn-outline">All Projects</a>
       </div>
+
+    </div>
+
+    <!-- PROJECT 2 -->
+    <div class="project-card">
+
+      <a href="https://github.com/Sanjaychagantipati" target="_blank" class="github-icon">
+        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png">
+      </a>
+
+      <h3>Responsive Portfolio Website</h3>
+
+      <p class="tech">HTML • CSS • JavaScript</p>
+
+      <p>
+        Personal portfolio website built using HTML, CSS, and JavaScript with responsive design and modern UI.
+      </p>
+
+      <div class="project-buttons">
+        <a href="https://github.com/Sanjaychagantipati" class="btn">View Code</a>
+      </div>
+
     </div>
 
   </div>
 </section>
 
-<section id="contact">
+<!-- CONTACT -->
+<section id="contact" class="fade">
   <h2>Contact</h2>
-  <p>Email: sanjaychagantipati@gmail.com</p>
+
+  <p class="contact-text">
+Currently open to opportunities in Java Full Stack Development.  
+If you have a role, project, or just want to connect — feel free to reach out.
+</p>
+
+  <!-- Button -->
+  <a href="mailto:sanjaychagantipati@gmail.com" class="btn">Say Hello!</a>
+
+  <!-- Icons -->
+  <div class="contact-icons">
+    <a href="https://github.com/Sanjaychagantipati"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/chagantipati-sanjay-900566229"><i class="fab fa-linkedin"></i></a>
+    <a href="mailto:sanjaychagantipati@gmail.com"><i class="fas fa-envelope"></i></a>
+  </div>
+
 </section>
+
+<footer>
+  <p>© 2026 Sanjay | Built with HTML, CSS, JavaScript</p>
+</footer>
 
 <script src="script.js"></script>
 
