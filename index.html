@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sanjay Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./style.css">
 
-  <!-- Icons (Font Awesome) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+  
 </head>
 
 <body>
@@ -52,7 +52,7 @@
   </p>
 
   <div class="buttons">
-    <a href="#projects" class="btn">View Projects</a>
+    <a href="#projects" class="btn">Projects</a>
     <a href="https://github.com/Sanjaychagantipati" class="btn-outline">GitHub</a>
     <a href="https://www.linkedin.com/in/chagantipati-sanjay-900566229" class="btn-outline">LinkedIn</a>
   </div>
@@ -118,19 +118,22 @@
 
     <!-- PROJECT 1 -->
     <div class="project-card">
+      <div class="project-header">
+        <h3>Student Management System</h3>
+        <a href="https://github.com/Sanjaychagantipati/sms-project.git" target="_blank" class="github-icon">
+          <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png">
+        </a>
 
-      <a href="https://github.com/Sanjaychagantipati/sms-project.git" target="_blank" class="github-icon">
-        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png">
-      </a>
-
-      <h3>Student Management System</h3>
-
-      <p class="tech">Spring Boot • React • PostgreSQL • JWT • Docker • Swagger</p>
+      
+      </div>
+      
 
       <p>
         Developed a full-stack Student Management System using Spring Boot and React with secure JWT authentication.
         Designed REST APIs and implemented modules for student, course, and attendance management.
       </p>
+
+      <p class="tech">Spring Boot • React • PostgreSQL • JWT • Docker • Swagger</p>
 
       <div class="project-buttons">
         <a href="https://github.com/Sanjaychagantipati/sms-project.git" class="btn">View Code</a>
@@ -140,18 +143,20 @@
 
     <!-- PROJECT 2 -->
     <div class="project-card">
-
-      <a href="https://github.com/Sanjaychagantipati" target="_blank" class="github-icon">
+      <div class="project-header">
+        <h3>Responsive Portfolio Website</h3>
+        <a href="https://github.com/Sanjaychagantipati" target="_blank" class="github-icon">
         <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png">
-      </a>
+        </a>
 
-      <h3>Responsive Portfolio Website</h3>
+      
+      </div>
+      <p>
+        Designed and developed a responsive personal portfolio website to showcase projects, skills, and experience, focusing on clean UI, structured layout, and smooth user interactions.
+      </p>
 
       <p class="tech">HTML • CSS • JavaScript</p>
 
-      <p>
-        Personal portfolio website built using HTML, CSS, and JavaScript with responsive design and modern UI.
-      </p>
 
       <div class="project-buttons">
         <a href="https://github.com/Sanjaychagantipati" class="btn">View Code</a>
@@ -166,9 +171,8 @@
 <section id="contact" class="fade">
   <h2>Contact</h2>
 
-  <p class="contact-text">
-Currently open to opportunities in Java Full Stack Development.  
-If you have a role, project, or just want to connect — feel free to reach out.
+<p class="contact-text">
+I’m currently open to new opportunities. My inbox is always open — whether you have a question or just want to say hi, I’ll get back to you as soon as possible.
 </p>
 
   <!-- Button -->
